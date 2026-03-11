@@ -17,7 +17,8 @@ connectDB();
 
 //CORS CONFIG
 const allowedOrigins = [
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'ideadrop-glf.vercel.app'
 ]
 
 app.use(cors({
