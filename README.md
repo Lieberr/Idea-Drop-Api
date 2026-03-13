@@ -17,48 +17,6 @@ The server is built with Node.JS and Express and uses MongoDB as the database. A
 
 These tools allow the backend to provide a scalable and secure REST API.
 
-## 🏗 Project Architecture
-
-The backend follow a modular structure to keep responsiblities separated and maintainable.
-
-```
-backend
-│
-├── config
-│   └── db.js
-│
-├── middleware
-│   ├── authMiddleware.js
-│   └── errorHandler.js
-│
-├── models
-│   ├── Idea.js
-│   └── User.js
-│
-├── routes
-│   ├── ideaRoutes.js
-│   └── authRoutes.js
-│ 
-├── utils
-│   ├── generateToken.js
-│   └── get.JwtSecret.js
-|
-├── server.js
-└── package.json
-
-```
-
-### Responsibilities of the folders
-
-| Folder | Function |
-|------|------|
-| config | Database configuration |
-| middleware | Authentication and error handling |
-| models | MongoDB schemas |
-| routes | API endpoints |
-| server.js | Main server file |
-| utils | JWT token creation and hash |
-
 # 📡 API Endpoints
 
 ## 💡 Ideas
@@ -147,36 +105,6 @@ Each idea belongs to a user
 
 --- 
 
-# 🌐 Environmen Variables
-
-Create a `.env` file in the project root:
-```env
-PORT = 8000
-MONGO_URI="your_mongodb_uri"
-JWT_SECRET="your_jwt_secret"
-```
-
-# ▶️ Run Project
-
-Install dependencies:
-
-```
-npm install
-```
-
-Running a server in development:
-
-```
-npm run dev
-```
-
-Or start normally:
-
-```
-node server.js
-```
-
----
 
 # ✨ Features
 
